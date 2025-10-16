@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+ font-family: 'handel gothic';
+ src: url(../font/handel gothic.ttf) format('truetype');
+}
+
+/*reset*/
+* {margin: 0;padding: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
+a {color: inherit; text-decoration: inherit;}
+img {vertical-align: middle;}
+a img {border: none;}
+li {list-style: none;}
+address, em, i {font-style: normal;}
+
+
+/*layout*/
+body {font-family: "Noto Sans KR", sans-serif; font-size: 14px; color: #333;}
+.en {font-family:"handel gothic", sans-serif;}
+.en_s {font-family: "Dancing Script", cursive;}
+
+
+/*header*/
+.innerHeader {max-width: 1720px; height: 110px; line-height: 110px; margin: auto;}
+.innerHeader .logo {float: left;}
+.innerHeader .logo a {display: block; width: 100%; height: 100%;} /*클릭 원활하게 block*/
+
+/*gnb + sns */
+.innerHeader .mainMenu {float: right; overflow: hidden; position: relative;}
+span.bar {position: absolute; left: 0; bottom: 40px; width: 0; height: 3px; background: #e7e7e7; transition: all 0.4s;}
+
+/*gnb*/
+.innerHeader .mainMenu .gnb {float: left;}
+.innerHeader .mainMenu .gnb li {float: left; margin: 0 20px;}
+.innerHeader .mainMenu .gnb li a {display: block; width: 100%; height: 100%; color: #555;}
+
+/*sns*/
+.innerHeader .mainMenu .sns {float: left; margin-left: 300px;}
+.innerHeader .mainMenu .sns li {float: left;}
+.innerHeader .mainMenu .sns li a {display: block; width: 100%; height: 100%; padding: 0 10px;}
+
+/*section.visual*/
+section.visual {max-width: 1720px; margin: auto;} /*overflow hidden 적용이 안됨*/
+section.visual .mainImg {float: left; width: 50%;}
+section.visual .mainImg img {width: 90%;}
+section.visual .mainTxt {float: left; width: 50%; margin-top: 180px;}
+section.visual .mainTxt .tit {font-size: 72px;}
+section.visual .mainTxt .tit span.en_s {margin-bottom: 10px;}
+section.visual .mainTxt .tit .gray {color: #ccc;}
+section.visual .mainTxt .txt {padding: 50px 0px 0px 70px;}
+
+
+/*타이틀, 텍스트, 더보기 버튼 공통 클래스0*/
+.tit {font-size: 50px; line-height: 1.2; font-weight: normal;}
+.tit span {display: block;}
+.tit span.en_s {font-size: 22px; font-weight: normal;}
+.tit span.gray {color: #ccc;}
+.txt p {color: #888; line-height: 1.6; margin-bottom: 10px;}
+.txt p b {font-weight: normal;}
+.moreBtn {display: inline-block; color: #333; position: relative; padding-left: 45px; margin-top: 20px; transform: skewX(-15deg) translateX(5px); transition: all 0.15s;}
+.moreBtn:before {content: ''; width: 42px; height: 1px; background: #333; position: absolute; left: 0; top: 54%}
+.moreBtn:hover, .moreBtn:focus {transform: skewX(0deg) translateX(0px); font-weight: bold; transition: all 0.3s;}
+
+/*section안에   .inner(공통 넓이 가이드)  .box(플루트)*/
+section .inner {width: 1320px; margin: auto; overflow: hidden;}
+section .inner .box {float: left; width: 50%;}
+
+/*section.journal*/
+section.journal {position:relative; padding: 190px 0 120px;}
+section.journal .scroll {text-transform: uppercase; position: absolute; left: 50%; transform: translateX(-50%); top: -20px; font-size: 10px; letter-spacing: 5px; writing-mode:vertical-rl; padding-top: 90px;}
+section.journal .scroll:before {content: ''; position: absolute; height: 75px; width: 1px; background: #333; top: 0; left: 6px;}
+section.journal .inner .box .img {padding-top: 100px;}
+section.journal .inner .box .tit {margin-bottom: 40px;}
+section.journal .inner .box ul {border-top: 1px solid #e6e6e6; padding-top: 40px;}
+section.journal .inner .box ul li {margin-bottom: 30px; overflow: hidden;}
+section.journal .inner .box ul h3 {float: left; width: 22%; font-size: 15px; font-weight: bold;}
+section.journal .inner .box ul li p {float: left; width: 78%; color: #888;}
+section.journal .inner .box .moreBtn {clear: both; margin-left: 22%;}
+
+
+/*section.service*/
+section.service {padding: 190px 0;}
+section.service .inner .box .img {margin-top: 60px;}
+section.service .inner .box.design {width: 45%; margin-top: -40%; padding-top: 60px; border-top: 1px solid #c4e5ea;}
+section.service .inner .box.design .tit {font-size: 30px; line-height: 1.4; margin-bottom: 20px;}
+
+
+/*section.customer*/
+section.customer { padding: 160px; text-align: center; background: url(../img/img_04.jpg) no-repeat center/cover;}
+section.customer .tit {color: #fff; font-size: 40px; margin-bottom: 10px;}
+section.customer .txt {color: #777;}
+
+
+/*section.team*/
+section.team {padding: 190px 0; position: relative;}
+section.team .inner .box.left {text-align: right; padding-right: 80px; box-sizing: border-box;}
+section.team .inner .box .tit {margin-top: 40px;}
+section.team .inner .box .img {margin-top: 100px;}
+section.team .inner .box .txt {margin: 30px;}
+
+/*footer*/
+footer {width: 1320px; margin: auto;}
+footer .top .tit {color: #e6e6e6; font-size: 62px; text-align: center; margin-bottom: 40px;}
+footer .bottom {border-top: 1px solid #e6e6e6; padding: 40px 0;}
+footer .bottom ul {overflow: hidden;}
+footer .bottom ul li {float: left; width: 23%; color: #aaa; font-size: 12px; line-height: 2;}
+footer .bottom ul li:nth-child(1) {width: 31%; font-size: 28px; color: #000; line-height: 1.1;}
+footer .bottom ul li b {color: #333; font-weight: normal;}
+footer .bottom ul li b:nth-child(1) { display: inline-block; margin-bottom: 12px; font-size: 14px; color: #333;}
+
+
+/*circleBox svg*/
+.circleBox {display: block; transform: rotate(-90deg);}
+.circleBox .svgAni path {fill:none; stroke:#f5f5f5; stroke-width:25; stroke-dasharray:1564; stroke-dashoffset: 0;}
+.journal .circleBox {width: 700px; position: absolute; right: 13%; top:100px; z-index: -1;}
+section.team .circleBox {width: 700px; position: absolute; top: -50px; left: 20%; z-index: -1;}
+
+/*svg애니메이션*/
+.circleBox.motion .svgAni path {animation-name: dash; animation-duration: 1.5s;}
+@keyframes dash {0% {stroke-dashoffset: 1564;} 100% {stroke-dashoffset: 0;}} 
+
+
+
+/*공통 .tit 애니메이션*/
+.tit.motion span {transform: translate3d(0,0,0)skewY(0deg); overflow: hidden;}
+.tit.motion span b {display: block; animation-name: textAni; animation-duration: 1.3s;}
+
+@keyframes textAni {
+    0%{opacity: 0;}
+    30%{opacity: 0; transform: translate3d(0,40px,0)skewY(8deg); transform-origin: top left;}    
+}
+
+/*visual .txt애니*/
+.txt.motion p {transform: translate3d(0,0,0)skewY(0deg); overflow: hidden;}
+.txt.motion p b {display: block; animation-name: textAni; animation-duration: 2s;}
+
+/*이미지 애니메이션*/
+.img.motion {position: relative; animation-name: imgAni; animation-duration: 1s;}
+@keyframes {
+    0%{transform: translateY(50px);}
+}
+.img.motion:after {content: ''; width: 100%; height: 0%; background: #fff; position: absolute; top: 0; left: 0; animation-name:mask; animation-duration: 1.2s;}
+@keyframes mask {
+    0%{height: 90%;}
+}
+
+section.team .img.motion:after {display: none;}
+
+/*section.service 배경색 애니*/
+body{transition: all 0.4s;}
+body.on {background: #e8fcff; transition: all 0.4s;}
+section.service .img.motion:after{background: #e8fcff;}
