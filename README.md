@@ -3,7 +3,7 @@
 ## ✨ 웹사이트 바로가기
 
 [
-    ![뮤자인]([https://github.com/user-attachments/assets/60c1b7fc-da4d-4c93-9399-a0d5ae3ceab7])
+    ![뮤자인](https://github.com/user-attachments/assets/60c1b7fc-da4d-4c93-9399-a0d5ae3ceab7)]
 
 ]
 (
