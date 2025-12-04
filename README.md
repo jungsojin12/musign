@@ -7,7 +7,7 @@
 
 
 (
-    (https://jungsojin12.github.io/musign/)
+    https://jungsojin12.github.io/musign/
 )
 
 ---
