@@ -3,7 +3,7 @@
 ## ✨ 웹사이트 바로가기
 
 
- ![뮤자인](https://i.imgur.com/HUDM8Zv.png)
+ ![뮤자인](https://i.imgur.com/6Rc8viQ.png)
 
 
 (
